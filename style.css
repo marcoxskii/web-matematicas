@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #282828;
+    color: #fff;
+}
+
+header {
+    background-color: #282828;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ac2bc6; 
+}
+
+main {
+    display: flex;
+}
+
+.texto, .calculadora {
+    flex: 1;
+    padding: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #282828; 
+    color: #fff; 
+}
+
+header {
+    background-color: #282828;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ac2bc6; 
+}
+
+main {
+    display: flex;
+    padding: 20px; 
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.texto {
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px; 
+}
+
+.calculadora-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    max-width: 50%; 
+    margin-left: 20px; 
+}
+
+.calculadora {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%; /* Ajusta el ancho de la calculadora al 100% del contenedor */
+}
+
+.pantalla {
+    background-color: #444;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px; 
+}
+
+.botones button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 20px; 
+}
+
+.botones button:hover {
+    background-color: #777;
+}
+
+.calculadora {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.pantalla {
+    background-color: #444;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 110px;
+}
+
+.botones button {
+    background-color: #535353;
+    color: #ff9029;
+    border: none;
+    padding: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.botones button:hover {
+    background-color: #777;
+}
+
+.calculadora-container {
+    flex: 20;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 50%;
+}
+
+
