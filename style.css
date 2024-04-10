@@ -182,4 +182,32 @@ main {
     max-width: 50%;
 }
 
+ul.History {
+    list-style-type: none; /* Removes the default bullet points */
+    padding: 0; /* Removes the default padding */
+    margin: 0; /* Removes the default margin */
+}
+
+ul.History li {
+    background-color: #535353; /* Sets the background color of the list items */
+    color: #ff9029; /* Sets the text color of the list items */
+    padding: 15px; /* Adds padding around the list items */
+    border-radius: 20px; /* Rounds the corners of the list items */
+    margin-bottom: 10px; /* Adds space between the list items */
+    font-size: 1.5rem; /* Sets the font size of the list items */
+}
+
+ul.History li:hover {
+    background-color: #777; /* Changes the background color when hovering over a list item */
+}
+
+ul.History li.fade-in {
+    opacity: 0; /* Start with the list item invisible */
+    transition: opacity 0.5s ease-in-out; /* Transition the opacity over 1 second */
+}
+
+ul.History li.fade-in.show {
+    opacity: 1; /* Make the list item visible */
+}
+
 
