@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let operadorSeleccionado = '';
     let operandoAnterior = '';
 
+    let history = [];
+
+    var ul = document.querySelector('.History');
+
     botones.forEach(boton => {
         boton.addEventListener('click', function() {
             const valorBoton = boton.textContent;
@@ -66,9 +70,24 @@ document.addEventListener('DOMContentLoaded', function() {
         // Mostrar el resultado en pantalla
         pantalla.textContent = resultado;
         
+        //Guardar en historial
+        history.push(numero1 + operadorSeleccionado + numero2 + '=' + resultado);
+
+        var li = document.createElement('li');
+        li.textContent = history[history.length-1];
+        li.className = 'fade-in'; // Add the class
+        ul.appendChild(li);
+
+        setTimeout(function() {
+            li.className += ' show'; // Add the 'show' class after a short delay
+        }, 5);
+
         // Restablecer valores para la siguiente operación
         operacionActual = resultado.toString();
         operadorSeleccionado = '';
         operandoAnterior = '';
+
+        
+        console.log(history);
     }
 });
