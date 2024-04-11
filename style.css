@@ -186,6 +186,8 @@ ul.History {
     list-style-type: none; /* Removes the default bullet points */
     padding: 0; /* Removes the default padding */
     margin: 0; /* Removes the default margin */
+    height: 50vh;
+    overflow-y: auto;
 }
 
 ul.History li {

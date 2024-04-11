@@ -47,9 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function calcularResultado() {
         let resultado;
-        const numero1 = parseFloat(operandoAnterior);
-        const numero2 = parseFloat(operacionActual);
-
+        let numero1 = parseFloat(operandoAnterior);
+        let numero2 = parseFloat(operacionActual);
+        if(Number.isNaN(numero1)) numero1 = 0;
+        if(Number.isNaN(numero2)) numero2 = 0;
         switch (operadorSeleccionado) {
             case '+':
                 resultado = numero1 + numero2;
@@ -82,12 +83,12 @@ document.addEventListener('DOMContentLoaded', function() {
             li.className += ' show'; // Add the 'show' class after a short delay
         }, 5);
 
+        ul.scrollTop = ul.scrollHeight; 
+
         // Restablecer valores para la siguiente operación
         operacionActual = resultado.toString();
         operadorSeleccionado = '';
         operandoAnterior = '';
 
-        
-        console.log(history);
     }
 });
