@@ -94,9 +94,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const enlaceNosotros = document.querySelector('nav ul li:nth-child(4) a'); // Selecciona el enlace "Sobre Nosotros"
-    const nombre1 = document.querySelector('.nombre1'); // Selecciona el primer nombre
-    const nombre2 = document.querySelector('.nombre2'); // Selecciona el segundo nombre
+    const enlaceNosotros = document.querySelector('nav ul li:nth-child(4) a'); 
+    const nombre1 = document.querySelector('.nombre1');
+    const nombre2 = document.querySelector('.nombre2');
 
     enlaceNosotros.addEventListener('click', function() {
         // Agrega la clase de resaltado a los nombres
@@ -107,7 +107,17 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
             nombre1.classList.remove('resaltado');
             nombre2.classList.remove('resaltado');
-        }, 1000); // 1000 milisegundos = 1 segundo
+        }, 500); 
     });
 });
+
+document.getElementById("link-calculadora").addEventListener("click", function() {
+    var calculadora = document.querySelector(".calculadora");
+    calculadora.classList.add("resaltado-calculadora"); 
+    setTimeout(function() {
+        calculadora.classList.remove("resaltado-calculadora"); 
+    }, 350);
+});
+
+
 

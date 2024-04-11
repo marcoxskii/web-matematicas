@@ -115,7 +115,9 @@ main {
 .calculadora {
     text-align: center;
     margin-top: 20px;
-    width: 100%; /* Ajusta el ancho de la calculadora al 100% del contenedor */
+    width: 100%;
+    transition: background-color 1s ease;
+    transition: border-radius 1s ease;
 }
 
 .pantalla {
@@ -222,16 +224,31 @@ ul.History li.fade-in.show {
 
 @keyframes resaltar {
     0% { color: inherit; } 
-    40% { color: rgb(68, 255, 118); } 
+    40% { color: rgb(0, 199, 248); } 
     70% { color: inherit; } 
 }
 
 nav ul li a:active + .nombre1,
 nav ul li a:active + .nombre2 {
-    animation: resaltar 0.2ms ease; 
+    animation: resaltar 1ms ease; 
 }
 
 .resaltado {
     animation: resaltar 0.6s ease;
 }
+
+.resaltado-calculadora {
+    background-color: #ffca67ca;
+    border-radius: 20px;
+}
+
+.Bienvenido.Usuario {
+    max-width: 50%; /* Limita el ancho máximo al 50% del contenedor padre */
+    text-align: left; /* Alinea el contenido a la izquierda */
+    margin-right: auto; /* Centra la sección en la pantalla */
+    margin-left: 0; /* Ajusta el margen izquierdo */
+}
+
+
+
 
