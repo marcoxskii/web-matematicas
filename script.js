@@ -92,3 +92,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const enlaceNosotros = document.querySelector('nav ul li:nth-child(4) a'); // Selecciona el enlace "Sobre Nosotros"
+    const nombre1 = document.querySelector('.nombre1'); // Selecciona el primer nombre
+    const nombre2 = document.querySelector('.nombre2'); // Selecciona el segundo nombre
+
+    enlaceNosotros.addEventListener('click', function() {
+        // Agrega la clase de resaltado a los nombres
+        nombre1.classList.add('resaltado');
+        nombre2.classList.add('resaltado');
+
+        // Remueve la clase de resaltado después de 1 segundo
+        setTimeout(function() {
+            nombre1.classList.remove('resaltado');
+            nombre2.classList.remove('resaltado');
+        }, 1000); // 1000 milisegundos = 1 segundo
+    });
+});
+

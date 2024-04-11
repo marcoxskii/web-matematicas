@@ -84,6 +84,14 @@ main {
     padding: 20px; 
 }
 
+.nombre1 {
+    color: rgb(93, 93, 255);
+}
+
+.nombre2 {
+    color: rgb(255, 179, 37);
+}
+
 .contenido {
     display: flex;
     justify-content: space-between; 
@@ -212,4 +220,18 @@ ul.History li.fade-in.show {
     opacity: 1; /* Make the list item visible */
 }
 
+@keyframes resaltar {
+    0% { color: inherit; } /* Color original */
+    50% { color: rgb(255, 0, 204); } /* Color de resaltado */
+    90% { color: inherit; } /* Regresa al color original */
+}
+
+nav ul li a:active + .nombre1,
+nav ul li a:active + .nombre2 {
+    animation: resaltar 0.5s ease; /* Duración de la animación: 1 segundo */
+}
+
+.resaltado {
+    animation: resaltar 1s ease;
+}
 
