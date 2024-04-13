@@ -113,10 +113,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById("link-calculadora").addEventListener("click", function() {
     var calculadora = document.querySelector(".calculadora");
-    calculadora.classList.add("resaltado-calculadora"); 
+    calculadora.classList.add("resaltado-calculadora");
     setTimeout(function() {
-        calculadora.classList.remove("resaltado-calculadora"); 
-    }, 350);
+        calculadora.classList.remove("resaltado-calculadora");
+    }, 1000)
 });
 
 

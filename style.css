@@ -84,6 +84,10 @@ main {
     padding: 20px; 
 }
 
+footer{
+    text-align: center;
+}
+
 .nombre1 {
     color: rgb(93, 93, 255);
 }
@@ -118,6 +122,7 @@ main {
     width: 100%;
     transition: background-color 1s ease;
     transition: border-radius 1s ease;
+    border-radius: 20px;
 }
 
 .pantalla {
@@ -161,6 +166,7 @@ main {
     font-size: 2rem;
     padding: 2px;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .botones {
@@ -214,12 +220,12 @@ ul.History li:hover {
 }
 
 ul.History li.fade-in {
-    opacity: 0; /* Start with the list item invisible */
-    transition: opacity 0.5s ease-in-out; /* Transition the opacity over 1 second */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
 }
 
 ul.History li.fade-in.show {
-    opacity: 1; /* Make the list item visible */
+    opacity: 1; 
 }
 
 @keyframes resaltar {
@@ -234,19 +240,28 @@ nav ul li a:active + .nombre2 {
 }
 
 .resaltado {
-    animation: resaltar 0.6s ease;
+    animation: resaltar 2.0s ease;
 }
 
 .resaltado-calculadora {
-    background-color: #ffca67ca;
-    border-radius: 20px;
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-iteration-count: -1;
 }
 
+
+@keyframes anim{
+    25% {background-color: #FFB325;} 
+   100% {background-color: #282828;}
+}
+
+
+
 .Bienvenido.Usuario {
-    max-width: 50%; /* Limita el ancho máximo al 50% del contenedor padre */
-    text-align: left; /* Alinea el contenido a la izquierda */
-    margin-right: auto; /* Centra la sección en la pantalla */
-    margin-left: 0; /* Ajusta el margen izquierdo */
+    max-width: 50%;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 0; 
 }
 
 
