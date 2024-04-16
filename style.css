@@ -266,5 +266,19 @@ nav ul li a:active + .nombre2 {
 }
 
 
+#mezclar {
+    background-color: #4CAF50; 
+    color: white;
+    border: none; 
+    border-radius: 
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+#mezclar:hover {
+    background-color: #45a049;
+}
+
+
 
 

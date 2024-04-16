@@ -131,6 +131,26 @@ document.getElementById("link-calculadora").addEventListener("click", function()
     }, 1000)
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var botonMezclar = document.getElementById('mezclar');
+    botonMezclar.addEventListener('click', function() {
+        var botonesNumeros = document.querySelectorAll('.numero');
+        
+        var numeros = [];
+
+        botonesNumeros.forEach(function(boton) {
+            numeros.push(boton.textContent);
+        });
+
+        numeros.sort(function() { return 0.5 - Math.random() });
+
+        botonesNumeros.forEach(function(boton, index) {
+            boton.textContent = numeros[index];
+        });
+    });
+});
+
+
 
 
 
