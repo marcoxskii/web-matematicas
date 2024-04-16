@@ -111,6 +111,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.getElementById('operaciones').addEventListener('click', function() {
+    var strongs = document.getElementsByTagName('strong');
+    console.log("111111111");
+    for (var i = 0; i < strongs.length; i++) {
+        strongs[i].classList.add('resaltado');
+    }
+    setTimeout(function() {
+        for (var i = 0; i < strongs.length; i++) {
+            strongs[i].classList.remove('resaltado');
+        }
+    }, 500);
+});
+
 document.getElementById("link-calculadora").addEventListener("click", function() {
     var calculadora = document.querySelector(".calculadora");
     calculadora.classList.add("resaltado-calculadora");
